@@ -41,10 +41,10 @@ def GenerarNumero():
     
     nro_generado = random.randint(nro_1, nro_2)
 
-    entry_nro_generado.config(state='normal')  # Hacer el Entry editable para poder cambiar el texto
-    entry_nro_generado.delete(0, tk.END)       # Limpiar el contenido actual
-    entry_nro_generado.insert(0, str(nro_generado))  # Insertar el nuevo número generado
-    entry_nro_generado.config(state='readonly')  # Hacer el Entry solo lectura
+    entry_nro_generado.config(state='normal')  
+    entry_nro_generado.delete(0, tk.END)    
+    entry_nro_generado.insert(0, str(nro_generado)) 
+    entry_nro_generado.config(state='readonly')  
 
 bot_generar = tk.Button(ventana, text="Generar número", command=GenerarNumero)
 bot_generar.grid(row=3, column=1, padx=20, pady=10)
